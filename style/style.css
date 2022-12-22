@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family:'Quicksand', 'sans-serif' ;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color:#020312;
+    --text-color: #fff;
+    --primary-color: #eb4a4a;
+    --secondary-color: grey;
+    --h1-font: 5rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
+    --h5-font:1,2;
+    --p-font: 1rem;
+    --a-font: 1.2rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background: transparent;
+  padding: 25px 15%;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--secondary-color);
+    font-size: var(--p-font);
+    padding: 10px 25px;
+    border-radius: 0.8rem;
+    transition: all .40s ease;
+}
+.navbar a:hover{
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+section{
+    padding: 200px 15% 90px;
+}
+
+.home{
+    width: 100%;
+    height: 90vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.home-text h4{
+    color: var(--primary-color);
+    font-size: var(--h4-font);
+    font-weight: 600;
+}
+
+.home-text h1{
+    font-size: var(--h1-font);
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.home-text span{
+    color: var(--primary-color);
+}
+
+.home-text h3{
+    font-size: var(--h3-font);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    font-size: var(--a-font);
+    font-weight: 600;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 40px;
+    border-radius: 0.8rem;
+    transition: all .50s ease; 
+}
+
+.btn:hover{
+    background: transparent;
+    opacity: 1;
+    border: 1px solid var(--primary-color);
+}
+
+
+header.sticky{
+    background: var(--bg-color);
+    border: 1px solid var(--bg-color);
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text h4{
+    color: var(--primary-color);
+    font-size: var(--h4-font);
+    font-weight: 600;
+    margin: 8px;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    margin: 2rem;
+}
+
+.about-text p{
+    color: var(--secondary-color);
+    font-size: var(--p-font);
+    line-height: 25px;
+}
+
+.about-features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-features h5{
+    font-size: var(--h5-font);
+    font-weight: 600;
+}
+
+.about-img img{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.main-text{
+    text-align: center;
+}
+
+.main-text h2{
+font-size: var(--h2-font);
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.main-text h4{
+    font-size: var(--h4-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:1.5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.box{
+    background: #12141c;
+    padding: 40px;
+    border-top:5px solid transparent;
+    border-radius: 0.8rem;
+   
+}
+.box h3{
+    margin-bottom:0.9rem;
+    margin-top:0.9rem;
+    color: var(--text-color);
+    font-size: var(--h3-font);
+}
+
+.box p{
+    color: var(--secondary-color);
+    font-size: var(--p-font);
+    margin-top: 20px;
+    line-height: 1.4rem;
+}
+.box:hover{
+    border-top: 5px solid var(--primary-color);
+    transition: all .40s ease;
+}
+
+.box:hover h3{
+    color: var(--primary-color);
+}
+
+
+.portfolio-box{
+    background: #12141c;
+    padding: 40px;
+    border-top:5px solid transparent;
+    border-radius: 0.8rem;
+   
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    align-items: center;
+    gap: 2rem;
+}
